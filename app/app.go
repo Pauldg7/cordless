@@ -14,6 +14,7 @@ import (
 	"github.com/Bios-Marcel/cordless/readstate"
 	"github.com/Bios-Marcel/cordless/shortcuts"
 	"github.com/Bios-Marcel/cordless/ui"
+	"github.com/Bios-Marcel/cordless/ui/tcellutil"
 	"github.com/Bios-Marcel/cordless/version"
 )
 
@@ -34,6 +35,11 @@ func RunWithAccount(account string) {
 	}
 
 	app := tview.NewApplication()
+	screen, err := tcellutil.NewScreen()
+	if err != nil {
+		log.Fatalf("Unable to create TUI screen (%s)\n", err.Error())
+	}
+	app.SetScreen(screen)
 	loginScreen := ui.NewLogin(app, configDir)
 	app.SetRoot(loginScreen, true)
 	runNext := make(chan bool, 1)

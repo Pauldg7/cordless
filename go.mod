@@ -9,6 +9,7 @@ require (
 	github.com/Bios-Marcel/goclipimg v0.0.0-20191117180634-d0f7b06fbe82
 	github.com/Bios-Marcel/shortnotforlong v1.1.1
 	github.com/alecthomas/chroma v0.6.6
+	github.com/MOZGIII/fdswap-go v0.2.0
 	github.com/atotto/clipboard v0.1.2
 	github.com/dlclark/regexp2 v1.2.0 // indirect
 	github.com/gdamore/tcell v1.4.0
