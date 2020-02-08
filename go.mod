@@ -23,6 +23,7 @@ require (
 	github.com/godbus/dbus v4.1.0+incompatible // indirect
 	github.com/gopherjs/gopherwasm v1.1.0 // indirect
 	github.com/gordonklaus/portaudio v0.0.0-20180817120803-00e7307ccd93 // indirect
+	github.com/gordonklaus/portaudio v0.0.0-20180817120803-00e7307ccd93
 	github.com/mdp/qrterminal/v3 v3.0.0
 	github.com/pkg/errors v0.9.1
 	github.com/rivo/uniseg v0.1.0
@@ -32,6 +33,6 @@ require (
 	golang.org/x/sys v0.0.0-20200413165638-669c56c373c4 // indirect
 	gopkg.in/sourcemap.v1 v1.0.5 // indirect
 	gopkg.in/toast.v1 v1.0.0-20180812000517-0a84660828b2 // indirect
-	layeh.com/gopus v0.0.0-20161224163843-0ebf989153aa // indirect
+	layeh.com/gopus v0.0.0-20161224163843-0ebf989153aa
 	rsc.io/qr v0.2.0
 )
