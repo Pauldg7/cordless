@@ -9,7 +9,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/gordonklaus/portaudio"
+	"github.com/mattn/go-runewidth"
 	"github.com/mdp/qrterminal/v3"
+	"layeh.com/gopus"
 
 	"github.com/Bios-Marcel/cordless/fileopen"
 	"github.com/Bios-Marcel/cordless/util/files"
@@ -2756,7 +2759,7 @@ func (window *Window) LoadChannel(channel *discordgo.Channel) error {
 				fmt.Fprintln(window.commandView, "Error establishing voice connection: "+voiceError.Error())
 			}
 		}()
-		return
+		return nil
 	}
 
 	messages, loadError := window.messageLoader.LoadMessages(channel)
