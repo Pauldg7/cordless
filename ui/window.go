@@ -10,7 +10,6 @@ import (
 	"time"
 
 	"github.com/gordonklaus/portaudio"
-	"github.com/mattn/go-runewidth"
 	"github.com/mdp/qrterminal/v3"
 	"layeh.com/gopus"
 
